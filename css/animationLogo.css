@@ -1,0 +1,27 @@
+ /* The animation code */
+@keyframes animatedSquare  {
+  0% {background-color: red;
+  border-radius: 100%;
+  transform: translateY(40px);
+  filter:opacity(80%);}
+  25% {background-color: yellow;}
+  50% {background-color: green;
+  transform: rotate(45deg);}
+  100% {background-color: blue;
+  transform: translateX(40px) ;
+  }
+}
+/* The element to apply the animation to */
+
+img:hover {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: animatedSquare;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+ 
+
+ 
+}
